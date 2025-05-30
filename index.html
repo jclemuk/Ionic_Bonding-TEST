@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ionic SWF Viewer</title>
+  <meta charset="UTF-8">
+  <title>Ionic Flash Viewer</title>
+  <script src="ruffle.js"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; }
+  </style>
 </head>
-<body style="margin:0; padding:0; background:#000;">
-  <div style="width:100%; height:100vh; display:flex; align-items:center; justify-content:center;">
-    <object width="800" height="600" data="ionic_test.swf" type="application/x-shockwave-flash">
-      <param name="movie" value="ionic_test.swf" />
-      <param name="quality" value="high" />
-      <param name="allowScriptAccess" value="sameDomain" />
-      <param name="allowFullScreen" value="true" />
-      <p>Your browser does not support Flash or Flash has been disabled.</p>
-    </object>
+<body>
+  <div id="flash-container">
+    <embed src="ionic_test.swf" width="800" height="600" />
   </div>
 </body>
 </html>
